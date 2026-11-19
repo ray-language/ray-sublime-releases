@@ -1,15 +1,15 @@
-# ray-sublime
+# Ray Sublime
 
 **A code editor that speaks Sublime Text's language, written in [raylang](https://raylang.dev).**
 
-ray-sublime reads what Sublime Text 4 reads: `.sublime-syntax` grammars, color
+Ray Sublime reads what Sublime Text 4 reads: `.sublime-syntax` grammars, color
 schemes, themes, keymaps, snippets and settings, straight from a Sublime
 installation or from a package you drop in. On top of that it brings what a
 2026 editor is expected to have: language servers, an integrated terminal, Git,
 AI agents with MCP tools, dev containers, and an extension model of its own.
 
 <p align="center">
-  <img src="screenshots/editor-dark.png" alt="ray-sublime with a project open: sidebar, tabs, highlighted raylang source and the minimap" width="900">
+  <img src="screenshots/editor-dark.png" alt="Ray Sublime with a project open: sidebar, tabs, highlighted raylang source and the minimap" width="900">
 </p>
 
 This repository holds the **published builds** and the files the editor
@@ -37,7 +37,7 @@ Where it goes:
 
 | Platform | Installed to | Launch |
 |---|---|---|
-| macOS | `/Applications/ray-sublime.app` (or `~/Applications` when `/Applications` is not writable) | Launchpad, or `open -a ray-sublime` |
+| macOS | `/Applications/Ray Sublime.app` (or `~/Applications` when `/Applications` is not writable) | Launchpad, or `open -a "Ray Sublime"` |
 | Linux | `~/.local/opt/ray-sublime`, a desktop entry, and `~/.local/bin/ray-sublime` | the applications menu, or `ray-sublime .` |
 | Windows | `%LOCALAPPDATA%\Programs\ray-sublime`, a Start Menu shortcut, and the folder on your `PATH` | the Start Menu, or `ray-sublime .` |
 
@@ -46,11 +46,11 @@ the latest, and `RAY_SUBLIME_DIR` to choose where it goes. To install by hand,
 download the zip for your platform from the [latest
 release](https://github.com/ray-language/ray-sublime-releases/releases/latest),
 unzip it and run the `install.sh` / `install.ps1` inside (Linux, Windows) or
-drag `ray-sublime.app` to Applications (macOS).
+drag `Ray Sublime.app` to Applications (macOS).
 
 The macOS app is signed with a Developer ID and notarized. Once installed, the
 editor keeps itself current: it checks for a newer version once a day and on
-*ray-sublime › Check for Updates…*, and installs it only when the manifest's
+*Ray Sublime › Check for Updates…*, and installs it only when the manifest's
 signature and the zip's checksum are right.
 
 ## What you get

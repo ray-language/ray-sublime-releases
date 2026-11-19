@@ -6,7 +6,7 @@
 # Options, as environment variables:
 #   RAY_SUBLIME_VERSION=0.1.11   install that version instead of the latest
 #   RAY_SUBLIME_DIR=/some/dir    where to put it (macOS: the folder that gets
-#                                ray-sublime.app; Linux: the folder that gets
+#                                Ray Sublime.app; Linux: the folder that gets
 #                                the ray-sublime/ directory)
 #
 # The script reads update.json, the signed manifest the editor itself updates
@@ -88,11 +88,16 @@ if [ "$os" = macos ]; then
     fi
     mkdir -p "$dest"
     unzip -q -o "$zip" -d "$tmp/unpacked"
-    rm -rf "$dest/ray-sublime.app"
-    mv "$tmp/unpacked/ray-sublime.app" "$dest/ray-sublime.app"
-    say "installed: $dest/ray-sublime.app"
-    say "open it from Launchpad, or: open -a \"$dest/ray-sublime.app\""
-    say "for a 'ray-sublime' command in the terminal: ray-sublime > Install Command Line Tool…"
+    # "Ray Sublime.app" since 0.1.16; ray-sublime.app before. Either one in
+    # the zip, and an install under the old name is replaced, not kept beside.
+    app=$(ls -d "$tmp/unpacked/"*.app | head -1)
+    [ -d "$app" ] || die "no app bundle in the zip"
+    name=$(basename "$app")
+    rm -rf "$dest/ray-sublime.app" "$dest/Ray Sublime.app"
+    mv "$app" "$dest/$name"
+    say "installed: $dest/$name"
+    say "open it from Launchpad, or: open -a \"$dest/$name\""
+    say "for a 'ray-sublime' command in the terminal: Ray Sublime > Install Command Line Tool… (again, if you had it)"
 else
     dest="${RAY_SUBLIME_DIR:-$HOME/.local/opt}"
     mkdir -p "$dest"
