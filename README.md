@@ -1,15 +1,15 @@
-# ray-sublime
+# Ray Sublime
 
 **A code editor that speaks Sublime Text's language, written in [raylang](https://raylang.dev).**
 
-ray-sublime reads what Sublime Text 4 reads: `.sublime-syntax` grammars, color
+Ray Sublime reads what Sublime Text 4 reads: `.sublime-syntax` grammars, color
 schemes, themes, keymaps, snippets and settings, straight from a Sublime
 installation or from a package you drop in. On top of that it brings what a
 2026 editor is expected to have: language servers, an integrated terminal, Git,
 AI agents with MCP tools, dev containers, and an extension model of its own.
 
 <p align="center">
-  <img src="screenshots/editor-dark.png" alt="ray-sublime with a project open: sidebar, tabs, highlighted raylang source and the minimap" width="900">
+  <img src="screenshots/editor-dark.png" alt="Ray Sublime with a project open: sidebar, tabs, highlighted raylang source and the minimap" width="900">
 </p>
 
 This repository holds the **published builds** and the files the editor
