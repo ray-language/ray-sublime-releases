@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Flat: the app background colour and a honey amber bolt, no gradients. -->
+  <rect x="0" y="0" width="512" height="512" rx="104" ry="104" fill="#242936"/>
+  <path d="M265.2 54 L58.2 300 L297.4 300 L187 462 L453.8 212 L214.6 212 L361.8 54 Z"
+        fill="#ffb347"/>
+</svg>
