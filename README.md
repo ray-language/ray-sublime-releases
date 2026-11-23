@@ -9,7 +9,7 @@ installation or from a package you drop in. On top of that it brings what a
 AI agents with MCP tools, dev containers, and an extension model of its own.
 
 <p align="center">
-  <img src="screenshots/editor-dark.png" alt="Ray Sublime with a project open: sidebar, tabs, highlighted raylang source and the minimap" width="900">
+  <img src="screenshots/editor-dark.png" alt="Ray Sublime on macOS with its own source open: the sidebar, tabs, raylang code highlighted in ayu-mirage, and the minimap" width="900">
 </p>
 
 This repository holds the **published builds** and the files the editor
@@ -71,19 +71,29 @@ signature and the zip's checksum are right.
   files, Goto Anything (`⌘P`), Goto Symbol (`⌘R`), Goto Line, Goto Definition
   and References, the command palette (`⇧⌘P`).
 - Snippets, auto-complete, bracket matching, folding, minimap, breadcrumbs,
-  rulers, word wrap, indentation detection, `.editorconfig`, trim-on-save,
-  encodings and line endings, bookmarks, spell checking, Distraction Free
-  mode, a vim keymap.
+  sticky scroll, rulers, word wrap, indentation detection, `.editorconfig`,
+  trim-on-save, encodings (Windows-1252, Shift-JIS, GBK, Big5, KOI8-R and the
+  other legacy ones included) and line endings, bookmarks, spell checking,
+  Distraction Free mode, a vim keymap.
 - Tabs you can pin, splits and layouts, panels docked on all four sides, hot
   exit with untitled buffers restored, sessions and projects, multiple windows.
 
 **And what Sublime does not have.**
 - **Language servers**: a built-in LSP client that finds the servers on your
-  `PATH` (raylang, TypeScript, Python, Rust, Go, C/C++, JSON, CSS, HTML,
+  login shell's `PATH` (raylang, TypeScript, Python, Rust, Go, C/C++, JSON, CSS, HTML,
   YAML, TOML, shell, Lua, Markdown…): completion, hover, diagnostics, rename,
   formatting, code actions, workspace edits.
-- **Integrated terminal** (macOS and Linux), **Git** (status, diff, blame,
-  stage, commit, stash, branches).
+- **Integrated terminal** (macOS and Linux): file paths it prints are links,
+  and a file dropped on it from the sidebar or Finder is typed in.
+  **Git**: status, diff marks in the margin, blame, stage, commit, stash,
+  branches.
+- **Claude Code as an IDE**: a CLAUDE CODE panel runs the `claude` CLI
+  connected to the editor. It sees your selection and open files, gets the
+  language servers' diagnostics, and proposes each change as a diff in the
+  file's own tab, which you accept, reject or revert chunk by chunk. The files
+  it changed are marked in the sidebar and on their tabs. Files and images
+  dropped on the panel are handed to it, and the conversation is resumed when
+  the window comes back.
 - **AI agents**: a chat panel for Anthropic, OpenAI, Gemini, Ollama or any
   OpenAI-compatible endpoint, with keys in the system keychain; it reads the
   project, proposes edits you review as diffs, runs commands under an allow
@@ -95,12 +105,18 @@ signature and the zip's checksum are right.
   editor, permissions and folder trust, installed from the editor's own index.
 - A `ray-sublime` command for the terminal, folder trust, and self-update.
 
+## Light or dark
+
+Any Sublime color scheme and theme, light or dark, including the ones your
+Sublime Text installation carries.
+
 <p align="center">
-  <img src="screenshots/scheme-mariana.png" alt="The same project with Sublime's Mariana color scheme" width="900">
+  <img src="screenshots/editor-light.png" alt="The same file in ayu-light" width="900">
 </p>
 
 <p align="center">
-  <img src="screenshots/scheme-breakers.png" alt="The Breakers color scheme over a Markdown document" width="900">
+  <img src="screenshots/scheme-mariana.png" alt="raylang source with Sublime's Mariana color scheme and the Adaptive theme" width="445">
+  <img src="screenshots/scheme-breakers.png" alt="raylang source with Sublime's Breakers color scheme and the Adaptive theme" width="445">
 </p>
 
 ## Platforms
