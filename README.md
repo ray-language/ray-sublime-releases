@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/window-ayu-mirage.png" alt="Ray Sublime on macOS with its own source open: the sidebar, tabs, raylang code highlighted in ayu-mirage, and the minimap" width="900">
+  <img src="screenshots/window-claude-code.png" alt="Ray Sublime on macOS with its own raylang source in ayu-mirage and Claude Code in the side panel, connected as the IDE: it has added a function to recent.ray, the diff is in its transcript and the new lines are marked in the editor's margin" width="900">
 </p>
 
 Ray Sublime reads what Sublime Text 4 reads: `.sublime-syntax` grammars, color schemes, themes,
